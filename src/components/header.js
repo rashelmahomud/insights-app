@@ -1,27 +1,44 @@
 import Link from 'next/link';
-
+import { useState } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai'
+import { AiFillDelete } from 'react-icons/ai'
 export default function header() {
+    const [open, setOpen] = useState(false);
+    const links = [
+        { name: "HOME", link: "/" },
+        { name: "TAGES", link: "/" },
+
+    ]
     return (
-        <header className="fixed z-40 w-full navbar top-0 bg-zinc-900">
-            <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-cener py-3">
-                <div className="md:flex-none flex justify-center py-4 sm:py-0 order-2 sm:order-1">
-                    <input placeholder="search.." className="p-2 lg:w-80 outline-none rounded-full" type="text" />
+        <div className='w-full z-50 fixed z-45 top-0 left-0 bg-zinc-900'>
+            <div className='lg:flex items-center justify-between py-4 lg:px-10 px-10'>
+                <div className='font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-white gap-3'>
+                    <span className='text-3xl text-indigo-600'><i class="fa-solid fa-headphones"></i></span>
+                    Designer
                 </div>
 
-                <div className="shrink w-80 sm:order-2">
-                    <Link href={"/"}>
-                        <h1 className="text-2xl text-white font-semibold ">insights</h1>
-                        </Link>
+                <div onClick={() => setOpen(!open)} className='text-3xl text-white absolute right-8 top-5 cursor-pointer lg:hidden'>
+
+                    {
+                        open ? <AiFillDelete /> : <AiOutlineMenu />
+                    }
+
                 </div>
 
-                <div className="flex order-3 gap-5 text-xl text-white">
+                <ul className={`lg:flex md:items-center md:pb-3 pb-12 absolute lg:static text-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-18 opacity-100" : "top-[-490px] lg:opacity-100 opacity-0"}`}>
 
-                    <Link href="/"> Home</Link>
-                    <Link href="/">Tags</Link>
-                   
-                </div>
+                    {
+                        links.map((link) => (
+
+                            <li key={link.name} className='lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 '>{link.name} </li>
+                        ))
+                    }
+
+                </ul>
+
+
             </div>
 
-        </header>
+        </div>
     )
 }
