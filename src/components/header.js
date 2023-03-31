@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
 
 export default function header() {
     return (
