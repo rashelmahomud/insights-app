@@ -1,5 +1,6 @@
 import Image from "next/image"
 import image from '../../../public/images/ss.jpg';
+import image1 from '../../../public/images/s.jpg';
 export default function section2() {
     return (
         <div className="lg:mx-36 p-10 mb-20">
@@ -18,7 +19,7 @@ export default function section2() {
                     <button class="rounded-full text-xl text-white font-bold my-5 px-3 bg-black p-2">Read Now</button>
                 </div>
                 <div>
-                    <Image src={image} width={600} height={600} className="my-5" />
+                    <Image src={image1} width={600} height={600} className="my-5" />
                     <p className="text-xl">Death is an inevitability, and while it’s a difficult topic to
                         discuss, planning for the future is essential. Life insurance
                         is an investment in the future, which can provide financial

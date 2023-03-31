@@ -3,7 +3,6 @@ export default function section3() {
     return (
         <div className="lg:mx-36 p-10 mb-20 z-50 mt-[-150px]">
 
-            <h1 className="text-center mb-20">Latest Insights</h1>
             <div className="text-5xl font-bold text-gray-800">
                 <h1 className="text-3xl">Maximizing Your Savings with<br/>
                     Post Office Monthly Income<br/>
