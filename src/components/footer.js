@@ -1,9 +1,9 @@
 
-import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs';
 
 export default function footer() {
   return (
-    <div className="font-bold my-10 bg-black">
+    <div className="font-bold mt-10 bg-black">
       <div className='xl:container xl:mx-auto'>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 text-white p-10">
           <div>
@@ -33,7 +33,7 @@ export default function footer() {
               <li className='border rounded-full p-2'><BsFacebook /></li>
               <li className='border rounded-full p-2'><BsInstagram /></li>
               <li className='border rounded-full p-2'><BsYoutube /></li>
-              <li className='border rounded-full p-2'><BsYoutube /></li>
+              <li className='border rounded-full p-2'><BsLinkedin /></li>
             </ul>
           </div>
 
