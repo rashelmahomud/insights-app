@@ -7,7 +7,7 @@ import Head from "next/head";
 export default function formate({ children }) {
     return (
         <>
-            <Head><title>my-app</title></Head>
+            <Head><title>insights</title></Head>
 
             <Header></Header>
             <Glarry />
