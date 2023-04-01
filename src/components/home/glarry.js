@@ -6,11 +6,12 @@ import 'swiper/css';
 export default function glarry() {
 
 
-    
+
     return (
         <section className="min-h-screen bg-zinc-900 z-10">
 
             <div>
+
                 {slide()}
             </div>
         </section>
@@ -18,8 +19,10 @@ export default function glarry() {
 }
 
 function slide() {
+
+
     return (
-        <div className="text-center my-10 pt-36">
+        <div className="text-center my-10 pt-36" >
             <div className="">
                 <Swiper
                     spaceBetween={50}
