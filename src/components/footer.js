@@ -5,7 +5,7 @@ export default function footer() {
   return (
     <div className="font-bold mt-10 bg-black">
       <div className='xl:container xl:mx-auto'>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 text-white p-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 text-white p-10 relative ">
           <div>
             <h1 className='text-3xl'>PennyPot</h1>
             <p className="text-sm mt-5 test-gray-300">Join the revolosion and see how easy < br/> middle maks home lose</p>
@@ -35,11 +35,15 @@ export default function footer() {
               <li className='border rounded-full p-2'><BsYoutube /></li>
               <li className='border rounded-full p-2'><BsLinkedin /></li>
             </ul>
+
+            
           </div>
+          <p className='absolute inset-y-0 right-0 w-16 bg-gradient-to-r from-cyan-50 to-black w-16 h-16 bg-gray-800 rounded-full p-5 '></p>
 
         </div>
 
         <div className='p-10'>
+        
           <hr />
           <div className='flex flex-wrap justify-between my-10'>
             <p className='text-gray-500 text-sm'>@ 2023 PennyPot | ABN 99 649 575 315 | Austoliyan Cradite Licency 536543</p>
